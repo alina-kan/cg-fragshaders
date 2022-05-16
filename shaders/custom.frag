@@ -18,7 +18,7 @@ vec4 colorconvert(float t){
     float luminance = 0.0;
 
     //initialize other colors
-    vec4 pink = vec4(216.0/255.0, 9.0/255.0, 126.0/255.0, 1.0); //vec4(252.0/255.0, 114.0/255.0, 192.0/255.0, 1.0); //
+    vec4 pink = vec4(216.0/255.0, 9.0/255.0, 126.0/255.0, 1.0); 
     vec4 blue = vec4(2.0/255.0, 12.0/255.0, 105.0/255.0, 1.0);
     vec4 purple = vec4(121.0/255.0, 72.0/255.0, 153.0/255.0, 1.0);
 
@@ -48,12 +48,8 @@ void main() {
     //convert black + white to color
     // pink -> white, blue -> black, purple -> grey
     //linear interpolation from pink to purple, then purple to blue
-
     vec4 color = vec4(1.0, 1.0, 1.0, 1.0);
     color = colorconvert(luminance);
-
-    //vec4 pink_color = w_b * pink;
-    //vec4 color = temp.rgba * pink;
 
     FragColor = color;
 }
