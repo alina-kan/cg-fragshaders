@@ -14,5 +14,5 @@ void main() {
     float red = (round(temp[0] * 4.0))/4.0;
     float green = (round(temp[1] * 4.0))/4.0;
     float blue = (round(temp[2] * 4.0))/4.0;
-    FragColor = vec4 (red, green, blue, 1.0);
+    FragColor = vec4(red, green, blue, 1.0);
 }
